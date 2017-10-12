@@ -29,28 +29,28 @@
 	<div id="logo">if문의 이해</div>
 	<div id="menu">
 		<ul>
-			<li id="menuA">A</li>
-			<li id="menuB">B</li>
-			<li id="menuC">C</li>
-			<li id="menuD">D</li>
-			<li id="menuE">E</li>
+			<li id="menuA">1</li>
+			<li id="menuB">2</li>
+			<li id="menuC">3</li>
+			<li id="menuD">4</li>
+			<li id="menuE">5</li>
 		</ul>
 	</div>
 </header>
 <div class="section" id="sectionA">
-	<h1 id="titleA">오늘은 조건문 if에 대해서 배워봅시다.</h1>
+	<h1 id="titleA"> 조건문	if	</h1>
 </div>
 <div class="section" id="sectionB">
-	<h1 id="titleB">if(조건){ 실행 }</h1>
+	<h1 id="titleB">돌아간다</h1>
 </div>
 <div class="section" id="sectionC">
-	<h1 id="titleC">코딩에서 가장 중요한 문법입니다.</h1>
+	<h1 id="titleC">배경보기</h1>
 </div>
 <div class="section" id="sectionD">
-	<h1 id="titleD">스크롤 이벤트와 if문을 결합해 스크롤에 따른 다양한 애니메이션 구현</h1>
+	<h1 id="titleD">색바뀐다</h1>
 </div>
 <div class="section" id="sectionE">
-	<h1 id="titleE">document.documentElement.scrollTop을 통해 스크롤 높이를 받습니다.</h1>
+	<h1 id="titleE">작아진다</h1>
 </div>
 <div class="section">
 	<h1 style="color:black">연습해봅시다.</h1>
@@ -59,7 +59,7 @@
 	window.onscroll = function(){
 		console.log(document.body.scrollTop);
 		var scrollH = document.body.scrollTop;
-		if(scrollH > 50){
+		if(scrollH > 300){
 			header.style.height = "44px";
 			header.style.position = "fixed";
 			header.style.top = "0px";
@@ -79,7 +79,7 @@
 
 		}
 
-		if(scrollH > 280){
+		if(scrollH > 500){
 			titleA.style.paddingTop = "500px";
 			menuA.style.background = "orange";
 		}else{
@@ -87,7 +87,7 @@
 			menuA.style.background = "white";
 		}
 
-		if(scrollH > 680){
+		if(scrollH > 900){
 			titleB.style.paddingTop = "500px";
 			titleB.style.transform = "rotateY(180deg)";
 			menuB.style.background = "orange";
@@ -97,7 +97,7 @@
 			menuB.style.background = "white";
 		}
 
-		if(scrollH > 1198){
+		if(scrollH > 2000){
 			sectionC.style.backgroundAttachment = "fixed";
 			menuC.style.background = "orange";
 		}else{
@@ -105,7 +105,7 @@
 			menuC.style.background = "white";
 		}
 
-		if(scrollH > 1816){
+		if(scrollH > 3000){
 			sectionD.style.background = "yellow";
 			titleD.style.color = "black";
 			menuD.style.background = "orange";
@@ -115,7 +115,7 @@
 			menuD.style.background = "white";
 		}
 
-		if(scrollH > 2400){
+		if(scrollH > 5000){
 			titleE.style.fontSize = "1.5em";
 			titleE.style.fontWeight = "700";
 			menuE.style.background = "orange";
