@@ -12,7 +12,7 @@
 		header li{width:100px;height:100px;color:black;background:white;float:left;border-radius: 100px;text-align: center;line-height: 100px;color:pink;font-size: 3em;margin-left: 20px;margin-right:20px;}
 		h1{color:white;font-size: 3em;text-align: center;padding-top:280px; line-height: 1.2;padding-left: 100px;padding-right: 100px;letter-spacing: -1px;}
 		#sectionA{ background: url('1차-최종안.jpg1.jpg'); } }
-		#sectionB{ background: <iframe width="560" height="315" src="https://www.youtube.com/embed/wBLwbK7bT4Y" frameborder="0" allowfullscreen></iframe>: all 1s; }
+		#sectionB{ background: <iframe width="560" height="315" src="https://www.youtube.com/embed/wBLwbK7bT4Y?rel=0" frameborder="0" allowfullscreen></iframe>: all 1s; }
 		#sectionC{ background: url('1차-최종안2.jpg');background-size:100% auto;background-position: 0px -120px; }
 		#sectionD{ background: PeachPuff ; transition: all 1s; }
 		#sectionE{ background: Peru; transition: all 1s; }	`
@@ -79,7 +79,7 @@
 
 		}
 
-		if(scrollH > 280){
+		if(scrollH > 500){
 			titleA.style.paddingTop = "500px";
 			menuA.style.background = "BurlyWood";
 		}else{
@@ -87,7 +87,7 @@
 			menuA.style.background = "white";
 		}
 
-		if(scrollH > 680){
+		if(scrollH > 800){
 			titleB.style.paddingTop = "500px";
 			titleB.style.transform = "rotateY(180deg)";
 			menuB.style.background = "PeachPuff";
@@ -97,7 +97,7 @@
 			menuB.style.background = "white";
 		}
 
-		if(scrollH > 1198){
+		if(scrollH > 2000){
 			sectionC.style.backgroundAttachment = "fixed";
 			menuC.style.background = "orange";
 		}else{
@@ -105,7 +105,7 @@
 			menuC.style.background = "white";
 		}
 
-		if(scrollH > 1816){
+		if(scrollH > 2800){
 			sectionD.style.background = "red";
 			titleD.style.color = "black";
 			menuD.style.background = "pink";
@@ -115,7 +115,7 @@
 			menuD.style.background = "white";
 		}
 
-		if(scrollH > 2400){
+		if(scrollH > 3500){
 			titleE.style.fontSize = "1.5em";
 			titleE.style.fontWeight = "700";
 			menuE.style.background = "Peru";
